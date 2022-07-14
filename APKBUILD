@@ -1,10 +1,10 @@
 # Contributor: Philipp Gaßner <activator112233@gmail.com>
-# Maintainer: Philipp Gaßner <activator112233@gmail>
+# Maintainer: Philipp Gaßner <activator112233@gmail.com>
 pkgname=nginx-mod-http-auth-pam
 _ngxmodname=ngx_http_auth_pam_module
 pkgver=1.5.3
 _ngxver=1.23.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Testpackage"
 url="https://localhost"
 arch="all"
