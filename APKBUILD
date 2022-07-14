@@ -52,7 +52,7 @@ check() {
 package() {
         # Replace with proper package command(s)
 #        mkdir -p "$pkgdir"
-	install -Dm644 "$srcdir"/objs/ngx_http_auth_pam_module.so "$pkgdir"/usr/lib/nginx/modules/ngx_http_auth_pam_module.so
+	install -Dm755 "$srcdir"/objs/ngx_http_auth_pam_module.so "$pkgdir"/usr/lib/nginx/modules/ngx_http_auth_pam_module.so
 	install -Dm644 "$srcdir"/auth_pam_module.conf "$pkgdir"/etc/nginx/modules/auth_pam_module.conf
 }
 
