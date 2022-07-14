@@ -4,7 +4,7 @@ pkgname=nginx-mod-http-auth-pam
 _ngxmodname=ngx_http_auth_pam_module
 pkgver=1.5.3
 _ngxver=1.23.0
-pkgrel=0
+pkgrel=1
 pkgdesc="Testpackage"
 url="https://localhost"
 arch="all"
@@ -33,7 +33,7 @@ prepare() {
 	mv nginx-"$_ngxver"/* .
 	rm -rf nginx-"$_ngxver"/ nginx-"$_ngxver".tar.gz
 #        tar -xzf "$srcdir"/ngx-pam.tar.gz --directory ngx-pam
-	echo "load_module \"modules/$_ngxmodname\";" > auth_pam_module.conf
+	echo "load_module \"modules/$_ngxmodname.so\";" > auth_pam_module.conf
 	default_prepare
 }
 
